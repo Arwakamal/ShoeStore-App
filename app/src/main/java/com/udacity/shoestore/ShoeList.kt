@@ -33,7 +33,7 @@ class ShoeList : Fragment() {
         binding.shoeViewModel =viewModel
         binding.shoeList=this
         binding.lifecycleOwner = this
-        //parent=binding.parent
+       binding.parent
 
        // requireActivity().actionBar?.setDisplayHomeAsUpEnabled(false)
 

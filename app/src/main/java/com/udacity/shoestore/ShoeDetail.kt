@@ -28,6 +28,7 @@ class ShoeDetail : Fragment() {
 
         binding.shoeViewModel =viewModel
         binding.ShoeDetail=this
+
         binding.lifecycleOwner = this
 
         return binding.root
