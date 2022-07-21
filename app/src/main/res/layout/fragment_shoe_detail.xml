@@ -61,7 +61,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/shoeName"
-            app:layout_constraintTop_toBottomOf="@+id/shoe_detail" />
+            app:layout_constraintTop_toBottomOf="@+id/shoe_detail"
+            android:autofillHints="" />
 
         <TextView
             android:id="@+id/companyName"
@@ -115,7 +116,7 @@
             android:layout_marginTop="16dp"
             android:backgroundTint="#0F6570"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="numberSigned|number|numberDecimal"
             android:text="@string/enter_your_shoe_size"
             android:textAlignment="viewStart"
             android:textColor="#878B8C"
