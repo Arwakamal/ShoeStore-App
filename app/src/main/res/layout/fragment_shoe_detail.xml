@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="ShoeViewModel"
+            type="com.udacity.shoestore.ShoeViewModel" />
+        <variable
+            name="ShoeDetail"
+            type="com.udacity.shoestore.ShoeDetail" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShoeDetail">
+
+        <TextView
+            android:id="@+id/shoe_detail"
+            android:layout_width="274dp"
+            android:layout_height="50dp"
+            android:text="@string/shoe_detail"
+            android:textAlignment="center"
+            android:textColor="#185470"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.138" />
+
+        <TextView
+            android:id="@+id/shoeName"
+            android:layout_width="95dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="48dp"
+            android:text="@string/ShoeName"
+            android:textAlignment="center"
+            android:textColor="#073C43"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/shoe_detail"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_detail" />
+
+        <EditText
+            android:id="@+id/enteryourshoeName"
+            android:layout_width="188dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="#0F6570"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/enter_your_shoe_name"
+            android:textColor="#878B8C"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/shoeName"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_detail" />
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="100dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/companyName"
+            android:textAlignment="center"
+            android:textColor="#073C43"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/shoeName"
+            app:layout_constraintTop_toBottomOf="@+id/shoeName" />
+
+        <EditText
+            android:id="@+id/editTextcompanyName"
+            android:layout_width="193dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#0F6570"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/enter_the_company_name"
+            android:textAlignment="viewStart"
+            android:textColor="#878B8C"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/enteryourshoeName"
+            app:layout_constraintStart_toEndOf="@+id/companyName"
+            app:layout_constraintTop_toBottomOf="@+id/enteryourshoeName" />
+
+        <TextView
+            android:id="@+id/shoeSize"
+            android:layout_width="98dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="11dp"
+            android:text="@string/shoe_size"
+            android:textAlignment="center"
+            android:textColor="#073C43"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/shoeDescribtion"
+            app:layout_constraintStart_toStartOf="@+id/companyName"
+            app:layout_constraintTop_toBottomOf="@+id/companyName"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editTextshoeSize"
+            android:layout_width="187dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#0F6570"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/enter_your_shoe_size"
+            android:textAlignment="viewStart"
+            android:textColor="#878B8C"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextcompanyName"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/shoeSize"
+            app:layout_constraintTop_toBottomOf="@+id/editTextcompanyName" />
+
+        <TextView
+            android:id="@+id/shoeDescribtion"
+            android:layout_width="195dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/shoeDescription"
+            android:textAlignment="center"
+            android:textColor="#073C43"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/editTextshoeSize"
+            app:layout_constraintHorizontal_bias="0.396"
+            app:layout_constraintStart_toStartOf="@+id/shoeSize"
+            app:layout_constraintTop_toBottomOf="@+id/editTextshoeSize" />
+
+        <EditText
+            android:id="@+id/editTextshoeDescribtion"
+            android:layout_width="272dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="13dp"
+            android:backgroundTint="#0F6570"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/enter_your_shoe_description"
+            android:textAlignment="center"
+            android:textColor="#878B8C"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/shoeDescribtion"
+            app:layout_constraintHorizontal_bias="0.519"
+            app:layout_constraintStart_toStartOf="@+id/shoeDescribtion"
+            app:layout_constraintTop_toBottomOf="@+id/shoeDescribtion" />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="98dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="44dp"
+            android:backgroundTint="#185470"
+            android:onClick="@{()->ShoeDetail.cancelButton()}"
+            android:text="@string/next"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editTextshoeDescribtion"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/cancel_btn"
+            app:layout_constraintTop_toBottomOf="@+id/editTextshoeDescribtion"
+            app:layout_constraintVertical_bias="0.638" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="98dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#185470"
+            android:onClick="@{()->ShoeDetail.cancelButton()}"
+            android:text="@string/cancel"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editTextshoeDescribtion"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextshoeDescribtion"
+            app:layout_constraintTop_toBottomOf="@+id/editTextshoeDescribtion"
+            app:layout_constraintVertical_bias="0.433" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

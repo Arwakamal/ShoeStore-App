@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Enter_your_Email_here">Enter your Email here</string>
+    <string name="Enter_your_Password_here">Enter your Password here</string>
+    <string name="Enter_your_User_name_here">Enter your User name here</string>
+    <string name="register">Register</string>
+    <string name="LogIn">Login</string>
+    <string name="welcome_to_shoe_app">Welcom to our Shoe App</string>
+    <string name="welcome_text">In our Shoe App, you can choose your perfect shoes and add different shoes, go and try it</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="instruction">Instruction</string>
+    <string name="InstructionSteps">In the next step you could choose shoe, what you like! and, also you need to choose:
+     \n\nColor, Shoe sizes, and Shoe Model\n\n\n </string>
+    <string name="create_account">create account</string>
+    <string name="login">Login</string>
+    <string name="AddBtn">Add</string>
+    <string name="shoe_detail">Shoe Details</string>
+    <string name="ShoeName">Shoe Name</string>
+    <string name="enter_your_shoe_name">Enter your shoe name</string>
+    <string name="companyName">Company Name</string>
+    <string name="enter_the_company_name">Enter the company name</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="enter_your_shoe_size">Enter your shoe size</string>
+    <string name="enter_your_shoe_description">Enter your shoe description</string>
+    <string name="cancel">Cancel</string>
+    <string name="shoeDescription">Shoe Description</string>
+    <string name="welcomeimage">welcome</string>
+    <string name="instructionimage">instructionimage</string>
+    <string name="logout">Logout</string>
+    <string name="shoeImage">shoeImage</string>
+</resources>

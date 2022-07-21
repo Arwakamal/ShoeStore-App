@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".Instruction">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="341dp"
+            android:layout_height="268dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/instructionimage"
+            app:layout_constraintBottom_toTopOf="@+id/instruction_text"
+            app:layout_constraintEnd_toEndOf="@+id/instruction"
+            app:layout_constraintStart_toStartOf="@+id/instruction"
+            app:layout_constraintTop_toBottomOf="@+id/instruction"
+            app:layout_constraintVertical_bias="0.66"
+            app:srcCompat="@drawable/instructiondesign" />
+
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="292dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="104dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/instruction"
+            android:textAlignment="center"
+            android:textColor="#185470"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/instruction_text"
+            android:layout_width="304dp"
+            android:layout_height="122dp"
+            android:layout_marginBottom="44dp"
+            android:text="@string/InstructionSteps"
+            android:textColor="#185470"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/next_2btn"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.459"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.987" />
+
+        <Button
+            android:id="@+id/next_2btn"
+            android:layout_width="110dp"
+            android:layout_height="57dp"
+            android:layout_marginBottom="44dp"
+            android:backgroundTint="#185470"
+            android:text="@string/next"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/instruction_text"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/instruction_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
