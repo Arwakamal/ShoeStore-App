@@ -5,12 +5,14 @@
 
     <data>
         <variable
-            name="ShoeViewModel"
-            type="com.udacity.shoestore.ShoeViewModel" />
+            name="Shoe"
+            type="com.udacity.shoestore.models.Shoe" />
         <variable
             name="ShoeDetail"
             type="com.udacity.shoestore.ShoeDetail" />
     </data>
+
+    <!--Used Constraint Layout as its used with complex views architecture and stops any nesting between other layouts-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -54,8 +56,8 @@
             android:layout_marginTop="48dp"
             android:backgroundTint="#0F6570"
             android:ems="10"
+            android:text="@={Shoe.name}"
             android:inputType="textPersonName"
-            android:text="@string/enter_your_shoe_name"
             android:textColor="#878B8C"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +87,7 @@
             android:backgroundTint="#0F6570"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/enter_the_company_name"
+            android:text="@={Shoe.company}"
             android:textAlignment="viewStart"
             android:textColor="#878B8C"
             android:textSize="12sp"
@@ -117,7 +119,7 @@
             android:backgroundTint="#0F6570"
             android:ems="10"
             android:inputType="numberSigned|number|numberDecimal"
-            android:text="@string/enter_your_shoe_size"
+            android:text="@={Shoe.size}"
             android:textAlignment="viewStart"
             android:textColor="#878B8C"
             android:textSize="12sp"
@@ -149,7 +151,7 @@
             android:backgroundTint="#0F6570"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/enter_your_shoe_description"
+            android:text="@={Shoe.description}"
             android:textAlignment="center"
             android:textColor="#878B8C"
             android:textSize="12sp"
@@ -166,7 +168,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="44dp"
             android:backgroundTint="#185470"
-            android:onClick="@{()->ShoeDetail.cancelButton()}"
+            android:onClick="@{()->ShoeDetail.nextButton()}"
             android:text="@string/next"
             android:textAlignment="center"
             android:textColor="#FFFFFF"

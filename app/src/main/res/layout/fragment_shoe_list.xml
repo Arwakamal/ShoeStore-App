@@ -13,6 +13,8 @@
             type="com.udacity.shoestore.ShoeList" />
     </data>
 
+    <!--Used Constraint Layout as its used with complex views architecture and stops any nesting between other layouts-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -23,7 +25,7 @@
         tools:context=".ShoeList"
         android:fillViewport="true">
 
-
+        <!-- Used Linear layout here because this is a simple vertical layout that doesn't need complex constraints-->
         <LinearLayout
             android:id="@+id/parent"
             android:layout_width="match_parent"

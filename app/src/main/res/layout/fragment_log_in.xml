@@ -9,6 +9,9 @@
             name="LogIn"
             type="com.udacity.shoestore.LogIn" />
     </data>
+
+    <!-- Used Linear layout here because this is a simple vertical layout that doesn't need complex constraints-->
+
     <LinearLayout
         android:id="@+id/loginFragment"
         android:layout_width="match_parent"

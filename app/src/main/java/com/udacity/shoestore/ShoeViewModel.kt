@@ -16,11 +16,12 @@ class ShoeViewModel :ViewModel(){
 
    // private val realShoeList = ArrayList<Shoe>()
    fun AddNewShoe(shoe: Shoe){
-       if (null== ShoeList.value  ) {
-           _ShoeList.value = mutableListOf(shoe)
-       } else {
-           ShoeList.value!!.add(shoe)
-       }
+       if(ShoeList.value.isNullOrEmpty()){
+           _ShoeList.value= mutableListOf(shoe)
+           Log.i("i","FIRSTTIME")}
+       else {
+           _ShoeList.value!!.add(shoe)
+           Log.i("i","SECONDTIME")}
    }
 }
 
